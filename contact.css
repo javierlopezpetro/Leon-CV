@@ -1,0 +1,145 @@
+.left{
+    margin: 0 10px;
+}
+
+.contact{
+    background-color: var(--primary-color);    
+    border-radius: 20px;
+    color: var(--text-color-inverse);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+    
+    
+}
+
+.contact_title{
+    text-align: center;
+    padding: 20px 0 5px;
+}
+
+.contact_details{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.contact_details--group{
+    margin: 15px auto;
+
+}
+
+.contact_label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact_form{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.contact_form_group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input{    
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+textarea{
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    resize: vertical;
+    height: auto;
+    width: 100%;
+
+}
+
+.contact_form_submit{
+    display: block;
+    background-color: var(--text-color);
+    border: 1px solid white;
+    color: var(--text-color-inverse);
+    font-size: 25px;
+    padding: .3em 1em;
+    border-radius: 10px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    width: 100%;
+    cursor: pointer;    
+}
+
+.social{
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 20px;
+    
+    
+}
+
+.social_group{
+    display: flex;
+    justify-content: center;    
+    
+
+}
+
+.social_item{
+    list-style: none;
+
+    margin: 0 15px;
+    
+}
+
+@media (min-width: 1056px){
+
+    .contact_title{
+        grid-area: title;
+    }
+
+    .contact_details{
+        grid-area: details;
+    }
+
+    .contact_form{
+        grid-area: form;
+    }
+
+    .social{
+        grid-area: social;
+    }
+
+    .contact{   
+        padding: 60px 0;     
+        max-width: 900px;
+        display: grid;
+        grid: 
+          "title   form" auto
+          "details form" 1fr
+          "social  form" auto /
+           1fr      1fr;
+           align-items: flex-start;    
+        
+    }
+
+    .contact_title{
+        text-align: left;
+        padding: 20px 45px 5px;
+    }
+
+    
+
+}
+
