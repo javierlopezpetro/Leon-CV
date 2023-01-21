@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="experiences.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 
@@ -51,7 +55,7 @@
                 pero experto en el arte del combate, recientemente contratado 
                 por el Departamento de Policía de Raccoon City (R.P.D.)
             </p>
-            <button class="profile__btn">Descargar CV</button>
+            <a class="profile__btn" href="Curriculum.pdf" download>Descargar CV</a>
         </div>
         
         <div class="profile__img">
@@ -163,7 +167,7 @@
                 </div>
             </div>
 
-            <form  class="contact_form">
+            <form  class="contact_form" name="contact" netlify>
                 <div class="contact_form_group">
                     <label for="name">Nombre</label>
                     <input required type="text" name="name" id="name">

@@ -39,6 +39,7 @@
     font-size: 20px;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .profile__btn:hover{
